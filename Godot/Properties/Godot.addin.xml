@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionModel>
+    <Extension path="/MonoDevelop/Debugging/DebuggerEngines">
+        <DebuggerEngine id="MonoDevelop.MicroFramework.Debugger"
+                        name="Debugger for Godot"
+                        features="Breakpoints, Pause, Stepping, DebugFile, ConditionalBreakpoints, Tracepoints, Catchpoints, Disassembly"
+                        type="Godot.GodotDebuggerEngine" />
+    </Extension>
+    <Extension path="/MonoDevelop/Ide/GlobalOptionsDialog">
+        <Section id="Godot"
+            _label="Godot Engine"
+            insertafter="VersionControl">
+            <Section id="GodotGeneral"
+                _label="General"
+                fill="true"
+                class="Godot.GlobalOptionsPanel" />
+        </Section>
+    </Extension>
+</ExtensionModel>
